@@ -11,7 +11,7 @@ app.use(express.urlencoded({ extended: false }));
 
 //connect to mongodb
 mongoose.connect(
-  "mongodb+srv://Rob:2piFmmicAp@cluster0.hfyaa.mongodb.net/newitemsDB?retryWrites=true&w=majority"
+  process.env.REACT_APP_API_URL
 );
 
 //data schema
